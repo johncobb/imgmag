@@ -1,0 +1,9 @@
+*.pyc
+*.pyo
+env
+startbootstrap-freelancer
+static
+activate
+*.pdf
+pdf/*
+out/*
