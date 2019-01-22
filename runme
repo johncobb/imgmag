@@ -2,10 +2,12 @@
 
 # TODO: This file is a work in progress
 
+# pdf to tiff
+convert -density 300 pdf/example.pdf -depth 8 -strip -background white -alpha off out/tiff/out.tiff
+
 # extract vin
 convert out.tiff -crop 400x1800+10+200 col1.jpg
 # extract current principal
 convert out.tiff -crop 200x1800+1500+200 col2.jpg
 
-# pdf to tiff
-convert -density 300 pdf/example.pdf -depth 8 -strip -background white -alpha off out/tiff/out.tiff
+
